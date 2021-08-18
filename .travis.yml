@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "14.15"
-# dist: dist
+dist: dist/weather-aml3304
 sudo: required
 branches:
   only:
@@ -16,6 +16,6 @@ deploy:
     secure: "1//04whe6m3ElBUKCgYIARAAGAQSNwF-L9Irg6_prPi1dcVh0JNkT5QBg4XXGeNJEWqcaDT1zNi7dCGzNicWbFqWa92F2be-tff5IWk"
    on:
     repo: SweetyPatel3013/Weather_Project_AML3304
-    branches:
+    branch:
       only:
         - main
