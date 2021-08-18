@@ -1,0 +1,31 @@
+<div class="hero bg-img">
+  <div class="container container-time">
+    <h1 class="text-color">{{ today | date:'EEEE, MMMM d, y, h:mm:ss a' }}</h1>
+  </div>
+</div>
+<div class="forecast-table-height">
+<div class="forecast-table">
+  <div class="container">
+    <div class="forecast-container">
+      <div class="today forecast">
+        <div class="forecast-header">
+          <div class="day">{{ today | date:'EEEE' }}</div>
+          <div class="date">{{ today | date:'MMMM d, y' }}</div>
+        </div> <!-- .forecast-header -->
+        <div class="forecast-content">
+          <div class="location">Toronto, ON</div>
+          <div class="degree">
+            <div class="num">{{ celsius_temp | number:'1.0'}}<sup>o</sup>C</div>
+            <div class="forecast-icon">
+              <!-- <img src="assets/images/icons/icon-1.svg" alt="" width=90> -->
+            </div>
+          </div>
+          <span><img src="assets/images/icon-umberella.png" alt="">{{ humidity }}%</span>
+          <span><img src="assets/images/icon-wind.png" alt="">{{ wind }}km/h</span>
+          <span><img src="assets/images/icon-compass.png" alt="">{{ direction }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
