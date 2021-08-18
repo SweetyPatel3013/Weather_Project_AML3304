@@ -1,7 +1,7 @@
 # WeatherAml3304
 
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1. This project displays the current weather information for Toronto,Canada.
 
 ## Development server
 
@@ -29,6 +29,10 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Firebase
 
-https://weather-app-b6ad8.firebaseapp.com/ 
+https://aml-3304-weather-project.firebaseapp.com
 
 1. ng build && firebase deploy
+
+**Deployment URL for app:** https://aml-3304-weather-project.web.app/
+
+**Directory URL for source code:** https://github.com/SweetyPatel3013/Weather_Project_AML3304/tree/main/src
