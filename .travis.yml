@@ -9,5 +9,4 @@ branches:
 before_script:
   - npm install -g @angular/cli
 script:
-- ng lint
 - ng build --base-href https://github.com/SweetyPatel3013/Weather_Project_AML3304.git
