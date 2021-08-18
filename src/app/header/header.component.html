@@ -1,9 +1,50 @@
-<div class="main-navigation">
-  <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
-  <ul class="menu">
-    <li class="menu-item current-menu-item"><a href="index.html">Home</a></li>
-    <li class="menu-item"><a href="/about">About Us</a></li>
-    <li class="menu-item"><a href="/services">Our Services</a></li>
-    <li class="menu-item"><a href="/customers">Our Customers</a></li>
-  </ul>
-</div>
+<div class="site-header">
+  <div class="container">
+    <a href="/" class="branding">
+      <img src="assets/images/logo.png" alt="" class="logo">
+      <div class="logo-type">
+        <h1 class="site-title">Company Inc.</h1>
+        <small class="site-description">moving towards innovative future</small>
+      </div>
+    </a>
+    <ng-container *ngIf="!(fireAuth.user | async); else elseTemplate">
+      <div class="main-navigation">
+        <ul class="menu">
+            <button (click)="signInClicked()">Sign in with Google</button>
+        </ul>
+      </div>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <div class="main-navigation">
+        <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+          <ul class="menu">
+            <li class="menu-item"><a href="index.html" (click)="activeMenu()" [ngClass]="status ? 'current-menu-item' : ''">Home</a></li>
+            <li class="menu-item"><a href="/about" (click)="activeMenu()"[ngClass]="status ? 'current-menu-item' : ''">About Us</a></li>
+            <li class="menu-item"><a href="/services" (click)="activeMenu()" [ngClass]="status ? 'current-menu-item' : ''">Our Services</a></li>
+            <li class="menu-item"><a href="/customers" (click)="activeMenu()" [ngClass]="status ? 'current-menu-item' : ''">Our Customers</a></li>
+            <li class="menu-item" ><a (click)="signOutClicked()">Sign out</a></li>
+          </ul>
+          </div>
+    </ng-template>
+
+    <!-- <div *ngIf="!(fireAuth.user | async)">
+      <div class="main-navigation">
+        <ul class="menu">
+            <button (click)="signInClicked()">Sign in with Google</button>
+        </ul>
+      </div>
+    </div>
+    <div *ngIf="fireAuth.user | async" id="Auth-div">
+      <div class="main-navigation">
+    <button type="button" class="menu-toggle"><i class="fa fa-bars"></i></button>
+      <ul class="menu">
+        <li class="menu-item"><a href="index.html" (click)="activeMenu()" [ngClass]="status ? 'current-menu-item' : ''">Home</a></li>
+        <li class="menu-item"><a href="/about" (click)="activeMenu()"[ngClass]="status ? 'current-menu-item' : ''">About Us</a></li>
+        <li class="menu-item"><a href="/services" (click)="activeMenu()" [ngClass]="status ? 'current-menu-item' : ''">Our Services</a></li>
+        <li class="menu-item"><a href="/customers" (click)="activeMenu()" [ngClass]="status ? 'current-menu-item' : ''">Our Customers</a></li>
+        <li class="menu-item" ><a (click)="signOutClicked()">Sign out</a></li>
+      </ul>
+      </div>
+    </div> -->
+  </div>
+</div> <!-- .site-header -->
