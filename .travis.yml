@@ -11,5 +11,5 @@ before_script:
 script:
   - npm run test-headless
   - ng build --base-href https://github.com/SweetyPatel3013/Weather_Project_AML3304.git
-  - firebase deploy --token "1//04dh6YMg4-NlnCgYIARAAGAQSNwF-L9IrxgqHdkgHVbxd_gaJrioySAuhYGuTMP6u-pH5cTjKqSTpZ4w69TQW-iILdlJSuOqH1pQ"
+  - firebase deploy
 
