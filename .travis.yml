@@ -1,7 +1,7 @@
 language: node_js
 node_js:
   - "14.15"
-dist: dist/weather-aml3304
+# dist: dist
 sudo: required
 branches:
   only:
@@ -10,13 +10,3 @@ before_script:
   - npm install -g @angular/cli
 script:
 - ng build --base-href https://github.com/SweetyPatel3013/Weather_Project_AML3304.git
-- ng test
-deploy:
-  provider: firebase
-  token:
-    secure: "1//04whe6m3ElBUKCgYIARAAGAQSNwF-L9Irg6_prPi1dcVh0JNkT5QBg4XXGeNJEWqcaDT1zNi7dCGzNicWbFqWa92F2be-tff5IWk"
-   on:
-    repo: SweetyPatel3013/Weather_Project_AML3304
-    branch:
-      only:
-        - main
