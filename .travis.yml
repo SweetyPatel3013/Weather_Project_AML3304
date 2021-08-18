@@ -1,0 +1,13 @@
+language: node_js
+node_js:
+  - "9"
+# dist: dist
+sudo: required
+branches:
+  only:
+  - main
+before_script:
+  - npm install -g @angular/cli
+script:
+- ng lint
+- ng build --prod --base-href https://github.com/SweetyPatel3013/Weather_Project_AML3304.git
