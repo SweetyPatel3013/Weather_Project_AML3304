@@ -1,7 +1,6 @@
 language: node_js
 node_js:
   - "14.15"
-# dist: dist
 sudo: required
 branches:
   only:
@@ -9,7 +8,6 @@ branches:
 before_script:
   - npm install -g @angular/cli
 script:
-  - ng lint
   - npm run test-headless
   - ng build --base-href https://github.com/SweetyPatel3013/Weather_Project_AML3304.git
 deploy:
@@ -19,4 +17,6 @@ deploy:
       only:      
         - main 
   token:
-    secure: "1//04dh6YMg4-NlnCgYIARAAGAQSNwF-L9IrxgqHdkgHVbxd_gaJrioySAuhYGuTMP6u-pH5cTjKqSTpZ4w69TQW-iILdlJSuOqH1pQ"
+    secure: 1//04dh6YMg4-NlnCgYIARAAGAQSNwF-L9IrxgqHdkgHVbxd_gaJrioySAuhYGuTMP6u-pH5cTjKqSTpZ4w69TQW-iILdlJSuOqH1pQ
+  on:
+    branches: main
