@@ -43,7 +43,7 @@ export class HomeComponent implements OnInit {
   convToDirection(deg: any): any {
     deg = (deg/22.5)+1
     deg = Number(deg).toFixed();
-    var x = '';
+    var x = 'Direction Unknown';
     for(var i in this.wd)
     {
       if(i == deg){
