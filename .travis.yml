@@ -13,6 +13,8 @@ script:
 deploy:
   provider: firebase
   token:
-    secure: 1//04dh6YMg4-NlnCgYIARAAGAQSNwF-L9IrxgqHdkgHVbxd_gaJrioySAuhYGuTMP6u-pH5cTjKqSTpZ4w69TQW-iILdlJSuOqH1pQ
+    secure: "1//04dh6YMg4-NlnCgYIARAAGAQSNwF-L9IrxgqHdkgHVbxd_gaJrioySAuhYGuTMP6u-pH5cTjKqSTpZ4w69TQW-iILdlJSuOqH1pQ"
   on:
-    branches: main
+    branches:
+      only:
+        - main
