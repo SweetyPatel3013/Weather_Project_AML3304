@@ -14,5 +14,9 @@ script:
   - ng build --base-href https://github.com/SweetyPatel3013/Weather_Project_AML3304.git
 deploy:
   provider: firebase
+  on:
+    branches:    
+      only:      
+        - main 
   token:
     secure: "1//04dh6YMg4-NlnCgYIARAAGAQSNwF-L9IrxgqHdkgHVbxd_gaJrioySAuhYGuTMP6u-pH5cTjKqSTpZ4w69TQW-iILdlJSuOqH1pQ"
