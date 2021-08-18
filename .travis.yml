@@ -14,3 +14,8 @@ deploy:
   provider: firebase
   token:
     secure: "1//04whe6m3ElBUKCgYIARAAGAQSNwF-L9Irg6_prPi1dcVh0JNkT5QBg4XXGeNJEWqcaDT1zNi7dCGzNicWbFqWa92F2be-tff5IWk"
+   on:
+    repo: SweetyPatel3013/Weather_Project_AML3304
+    branches:
+      only:
+        - main
