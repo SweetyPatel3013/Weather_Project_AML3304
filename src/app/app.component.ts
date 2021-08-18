@@ -9,9 +9,9 @@ import '@firebase/auth'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  
+
   title = 'weather-aml3304';
-  
+
   constructor(
     public fireAuth: AngularFireAuth,
   ){}
