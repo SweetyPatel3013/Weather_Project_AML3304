@@ -36,3 +36,6 @@ https://aml-3304-weather-project.firebaseapp.com
 **Deployment URL for app:** https://aml-3304-weather-project.web.app/
 
 **Directory URL for source code:** https://github.com/SweetyPatel3013/Weather_Project_AML3304/tree/main/src
+
+![Home app](/images/home.png)
+![sign-in](/images/sign-in.png)
