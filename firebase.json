@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/weather-aml3304",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites":[
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
